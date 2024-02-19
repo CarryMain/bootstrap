@@ -8,6 +8,15 @@ header {
     position: relative;
 }
 
+nav { 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 34534535;
+    background: rgb(33, 33, 33)
+}
+
 .menu { 
     display: flex;
     justify-content: space-between;
@@ -28,7 +37,8 @@ header {
     padding-right: 43px;
 }
 
-.subheader { 
+.subheader {
+    margin-top: 50px; 
     background: rgba(0, 0, 0, .6);
     height: 87px;
     position: absolute;
