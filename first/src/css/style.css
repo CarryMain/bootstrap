@@ -137,3 +137,64 @@ header {
     width: 259px;
     height: 63px;
 }
+
+/* section */
+
+.advantages { 
+    min-height: 800px;
+    padding: 18px 434px 110px 434px;
+    background-color: #F2F2F2;
+}
+
+.advantages .advantages_header { 
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
+    width: 115px;
+    height: 27px; 
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.advantages .advantages_subheader { 
+    margin-top: 32px;
+    margin-bottom: 17px;
+    color: rgb(34, 34, 34);
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.advantages .advantages_title { 
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.advantages .advantages_title span { 
+    color: rgb(30, 172, 199);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.advantages .circle { 
+    background: rgb(30, 172, 199);
+    border-radius: 50%;
+    width: 116px;
+    height: 116px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages .row { 
+    margin-bottom: 40px;
+}
+
