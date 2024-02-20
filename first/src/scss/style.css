@@ -1,0 +1,323 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  height: 50px;
+  background: rgb(33, 33, 33);
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 34534535;
+  background: rgb(33, 33, 33);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+.menu .menu_link {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.menu .menu_item {
+  border-right: 2px dotted black;
+  padding-right: 43px;
+}
+
+.subheader {
+  margin-top: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  height: 87px;
+  position: absolute;
+  width: 100%;
+}
+.subheader .subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+.subheader .subheader_official {
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 250;
+  opacity: 0.6;
+  margin-top: 6px;
+}
+.subheader .subheader_call {
+  margin-top: 19px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 300;
+  text-align: right;
+}
+.subheader .subheader_phone {
+  display: block;
+  color: rgb(255, 255, 255);
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: right;
+  text-transform: uppercase;
+  line-height: 12px;
+}
+.subheader .subheader_btn {
+  width: 172px;
+  height: 46px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(0deg, rgb(30, 172, 199), rgb(76, 226, 255) 100%);
+  margin-top: 21px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo {
+  min-height: 800px;
+  background: url("../image/uber_bg.png") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+.promo .promo_header {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+}
+.promo .promo_subheader {
+  font-size: 36px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 37px;
+  margin-top: 22px;
+  text-align: center;
+}
+.promo .promo_descr {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 24px;
+  margin-top: 23px;
+  width: 985px;
+  height: 120px;
+}
+.promo .promo_btn {
+  display: block;
+  margin: 118px auto 0 auto;
+  border-radius: 4px;
+  border: none;
+  box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(0deg, rgb(30, 172, 199), rgb(76, 226, 255) 100%);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  width: 259px;
+  height: 63px;
+}
+
+.advantages {
+  min-height: 800px;
+  padding: 18px 434px 110px 434px;
+  background-color: #F2F2F2;
+}
+.advantages .advantages_header {
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: rgb(0, 0, 0);
+  width: 115px;
+  height: 27px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 7px;
+}
+.advantages .advantages_subheader {
+  margin-top: 32px;
+  margin-bottom: 17px;
+  color: rgb(34, 34, 34);
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages .advantages_title {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: left;
+}
+.advantages .advantages_title span {
+  color: rgb(30, 172, 199);
+  font-size: 17px;
+  font-weight: bold;
+}
+.advantages .circle {
+  background: rgb(30, 172, 199);
+  border-radius: 50%;
+  width: 116px;
+  height: 116px;
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.advantages .row {
+  margin-bottom: 40px;
+}
+
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: #F2F2F2;
+  text-align: center;
+}
+.mobile .label {
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: rgb(0, 0, 0);
+  width: 115px;
+  height: 27px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 7px;
+}
+.mobile .title {
+  margin-top: 32px;
+  margin-bottom: 17px;
+  color: rgb(34, 34, 34);
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.mobile .subtitle {
+  margin-top: 19px;
+  color: rgb(34, 34, 34);
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+.mobile_item_1 {
+  background: url("../image/first_bg.png") center center/cover no-repeat;
+}
+.mobile_item_2 {
+  background: url("../image/second_bg.png") center center/cover no-repeat;
+}
+.mobile_item_3 {
+  background: url("../image/third_bg.png") center center/cover no-repeat;
+}
+.mobile_item_4 {
+  background: url("../image/fourth_bg.png") center center/cover no-repeat;
+}
+.mobile_item_5 {
+  background: url("../image/fives_bg.png") center center/cover no-repeat;
+}
+.mobile_item_6 {
+  background: url("../image/sixs_bg.png") center center/cover no-repeat;
+}
+.mobile_item_subtitle {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.mobile_item_plus {
+  border-radius: 50%;
+  width: 29px;
+  height: 29px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.mobile .row {
+  margin-top: 32px;
+}
+
+.enter {
+  height: 900px;
+  background: linear-gradient(rgb(0, 0, 0) 57%, rgb(255, 255, 255) 43%);
+  padding: 57px 0 138px 0;
+}
+.enter .label {
+  display: block;
+  width: 115px;
+  height: 27px;
+  background: rgb(255, 255, 255);
+  color: rgb(7, 7, 22);
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  margin: 0 auto;
+  padding-top: 6px;
+}
+.enter .title {
+  color: rgb(255, 255, 255);
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 27px;
+}
+.enter .subtitle {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+.enter_car {
+  width: 759px;
+  height: 480px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 54px;
+}
+.enter .footer {
+  width: 327px;
+  height: 48px;
+  color: rgb(34, 34, 34);
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */

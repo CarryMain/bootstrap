@@ -1,0 +1,326 @@
+$color_1: rgb(255, 255, 255);
+$color_2: #fff;
+$color_3: rgb(34, 34, 34);
+$color_4: rgb(30, 172, 199);
+$font-family_1: 'Roboto', sans-serif;
+$background-color_1: #F2F2F2;
+$background-color_2: rgb(0, 0, 0);
+
+* {
+	font-family: $font-family_1;
+}
+header {
+	height: 50px;
+	background: rgb(33, 33, 33);
+	position: relative;
+}
+nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 34534535;
+	background: rgb(33, 33, 33);
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 13px 70px;
+	margin: 0;
+	list-style-type: none;
+	.menu_link {
+		color: $color_1;
+		font-size: 15px;
+		font-weight: 300;
+		text-decoration: none;
+	}
+	.menu_item {
+		border-right: 2px dotted black;
+		padding-right: 43px;
+	}
+}
+.subheader {
+	margin-top: 50px;
+	background: rgba(0, 0, 0, .6);
+	height: 87px;
+	position: absolute;
+	width: 100%;
+	.subheader_logo {
+		display: block;
+		max-width: 100%;
+		margin-top: 16px;
+	}
+	.subheader_official {
+		color: $color_1;
+		font-size: 13px;
+		font-weight: 250;
+		opacity: .6;
+		margin-top: 6px;
+	}
+	.subheader_call {
+		margin-top: 19px;
+		color: $color_1;
+		font-size: 12px;
+		font-weight: 300;
+		text-align: right;
+	}
+	.subheader_phone {
+		display: block;
+		color: $color_1;
+		margin-top: 8px;
+		font-size: 22px;
+		font-weight: 400;
+		text-align: right;
+		text-transform: uppercase;
+		line-height: 12px;
+	}
+	.subheader_btn {
+		width: 172px;
+		height: 46px;
+		border: none;
+		border-radius: 4px;
+		box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.12);
+		background: linear-gradient(0.00deg, rgb(30, 172, 199),rgb(76, 226, 255) 100%);
+		margin-top: 21px;
+		color: $color_1;
+		font-size: 14px;
+		font-weight: 400;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+.promo {
+	min-height: 800px;
+	background: url('../image/uber_bg.png') center center/cover no-repeat;
+	padding: 150px 0 135px 0;
+	.promo_header {
+		color: $color_2;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 60px;
+		line-height: 60px;
+		margin: 0;
+		text-align: center;
+	}
+	.promo_subheader {
+		font-size: 36px;
+		color: $color_2;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 37px;
+		margin-top: 22px;
+		text-align: center;
+	}
+	.promo_descr {
+		color: $color_1;
+		font-size: 18px;
+		font-weight: 400;
+		text-align: center;
+		line-height: 24px;
+		margin-top: 23px;
+		width: 985px;
+		height: 120px;
+	}
+	.promo_btn {
+		display: block;
+		margin: 118px auto 0 auto;
+		border-radius: 4px;
+		border: none;
+		box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.12);
+		background: linear-gradient(0.00deg, rgb(30, 172, 199),rgb(76, 226, 255) 100%);
+		color: $color_1;
+		font-size: 18px;
+		font-weight: 400;
+		text-align: center;
+		text-transform: uppercase;
+		width: 259px;
+		height: 63px;
+	}
+}
+.advantages {
+	min-height: 800px;
+	padding: 18px 434px 110px 434px;
+	background-color: $background-color_1;
+	.advantages_header {
+		display: block;
+		color: $color_1;
+		font-size: 11px;
+		font-weight: 400;
+		text-transform: uppercase;
+		background-color: $background-color_2;
+		width: 115px;
+		height: 27px;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 7px;
+	}
+	.advantages_subheader {
+		margin-top: 32px;
+		margin-bottom: 17px;
+		color: $color_3;
+		font-size: 38px;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.advantages_title {
+		font-size: 15px;
+		font-weight: 300;
+		text-align: left;
+		span {
+			color: $color_4;
+			font-size: 17px;
+			font-weight: bold;
+		}
+	}
+	.circle {
+		background: rgb(30, 172, 199);
+		border-radius: 50%;
+		width: 116px;
+		height: 116px;
+		margin-right: 25px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.row {
+		margin-bottom: 40px;
+	}
+}
+
+.mobile {
+    min-height: 864px;
+    padding: 48px 0 79px 0;
+    background: $background-color_1;
+    text-align: center;
+    .label { 
+        display: block;
+        color: $color_1;
+        font-size: 11px;
+        font-weight: 400;
+        text-transform: uppercase;
+        background-color: $background-color_2;
+        width: 115px;
+        height: 27px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 7px;
+    }
+    .title { 
+        margin-top: 32px;
+		margin-bottom: 17px;
+		color: $color_3;
+		font-size: 38px;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+    }
+    .subtitle { 
+        margin-top: 19px;
+        color: $color_3;
+        font-size: 17px;
+        font-weight: 400;
+        text-align: center;
+    }
+    &_item { 
+        position: relative;
+        width: 320px;
+        height: 280px;
+        margin: 0 auto;
+        margin-bottom: 19px;
+        padding-top: 92px;
+        &_1 {
+            background: url('../image/first_bg.png') center center/cover no-repeat;
+        }
+        &_2 {
+            background: url('../image/second_bg.png') center center/cover no-repeat;
+        }
+        &_3 {
+            background: url('../image/third_bg.png') center center/cover no-repeat;
+        }
+        &_4 {
+            background: url('../image/fourth_bg.png') center center/cover no-repeat;
+        }
+        &_5 {
+            background: url('../image/fives_bg.png') center center/cover no-repeat;
+        }
+        &_6 {
+            background: url('../image/sixs_bg.png') center center/cover no-repeat;
+        }
+        &_subtitle { 
+            color: $color_1;
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        &_plus {
+            border-radius: 50%;
+            width: 29px;
+            height: 29px;
+            background-color: $background-color_2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+    }
+    .row { 
+        margin-top: 32px;
+    }
+}
+
+.enter {
+    height: 900px;
+    background: linear-gradient(rgb(0,0,0) 57%, rgb(255,255,255) 43%);
+    padding: 57px 0 138px 0;
+    .label {
+        display: block;
+        width: 115px;
+        height: 27px;
+        background: rgb(255, 255, 255);
+        color: rgb(7, 7, 22);
+        font-size: 11px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+        border: none;
+        margin: 0 auto;
+        padding-top: 6px;
+
+    }
+    .title { 
+        color: $color_1;
+        font-size: 38px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 27px;
+    }
+    .subtitle { 
+        color: $color_1;
+        font-size: 17px;
+        font-weight: 400;
+        text-align: center;
+    }
+    &_car { 
+        width: 759px;
+        height: 480px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 54px;
+    }
+    .footer {
+        width: 327px;
+        height: 48px;
+        color: rgb(34, 34, 34);
+        font-size: 17px;
+        font-weight: 300;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
