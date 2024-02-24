@@ -42,26 +42,26 @@ nav {
   position: absolute;
   width: 100%;
 }
-.subheader .subheader_logo {
+.subheader_logo {
   display: block;
   max-width: 100%;
   margin-top: 16px;
 }
-.subheader .subheader_official {
+.subheader_official {
   color: rgb(255, 255, 255);
   font-size: 13px;
   font-weight: 250;
   opacity: 0.6;
   margin-top: 6px;
 }
-.subheader .subheader_call {
+.subheader_call {
   margin-top: 19px;
   color: rgb(255, 255, 255);
   font-size: 12px;
   font-weight: 300;
   text-align: right;
 }
-.subheader .subheader_phone {
+.subheader_phone {
   display: block;
   color: rgb(255, 255, 255);
   margin-top: 8px;
@@ -71,7 +71,7 @@ nav {
   text-transform: uppercase;
   line-height: 12px;
 }
-.subheader .subheader_btn {
+.subheader_btn {
   width: 172px;
   height: 46px;
   border: none;
@@ -85,13 +85,17 @@ nav {
   text-align: center;
   text-transform: uppercase;
 }
+.subheader_btn:hover {
+  background-image: none;
+  background-color: rgb(30, 172, 199);
+}
 
 .promo {
   min-height: 800px;
   background: url("../image/uber_bg.png") center center/cover no-repeat;
   padding: 150px 0 135px 0;
 }
-.promo .promo_header {
+.promo_header {
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
@@ -100,7 +104,7 @@ nav {
   margin: 0;
   text-align: center;
 }
-.promo .promo_subheader {
+.promo_subheader {
   font-size: 36px;
   color: #fff;
   font-weight: bold;
@@ -109,7 +113,7 @@ nav {
   margin-top: 22px;
   text-align: center;
 }
-.promo .promo_descr {
+.promo_descr {
   color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: 400;
@@ -119,7 +123,7 @@ nav {
   width: 985px;
   height: 120px;
 }
-.promo .promo_btn {
+.promo_btn {
   display: block;
   margin: 118px auto 0 auto;
   border-radius: 4px;
@@ -134,13 +138,17 @@ nav {
   width: 259px;
   height: 63px;
 }
+.promo_btn:hover {
+  background-image: none;
+  background-color: rgb(30, 172, 199);
+}
 
 .advantages {
   min-height: 800px;
   padding: 18px 434px 110px 434px;
   background-color: #F2F2F2;
 }
-.advantages .advantages_header {
+.advantages_header {
   display: block;
   color: rgb(255, 255, 255);
   font-size: 11px;
@@ -153,7 +161,7 @@ nav {
   text-align: center;
   padding-top: 7px;
 }
-.advantages .advantages_subheader {
+.advantages_subheader {
   margin-top: 32px;
   margin-bottom: 17px;
   color: rgb(34, 34, 34);
@@ -162,12 +170,12 @@ nav {
   text-align: center;
   text-transform: uppercase;
 }
-.advantages .advantages_title {
+.advantages_title {
   font-size: 15px;
   font-weight: 300;
   text-align: left;
 }
-.advantages .advantages_title span {
+.advantages_title span {
   color: rgb(30, 172, 199);
   font-size: 17px;
   font-weight: bold;
@@ -268,6 +276,28 @@ nav {
   transform: translateX(-50%);
   cursor: pointer;
 }
+.mobile_item_plus:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: rgb(30, 172, 199);
+  transition: 0.3s all;
+}
+.mobile_item_plus:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 14px;
+  width: 2px;
+  background-color: rgb(30, 172, 199);
+  transition: 0.3s all;
+}
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+  background-color: rgb(255, 255, 255);
+}
 .mobile .row {
   margin-top: 32px;
 }
@@ -320,4 +350,206 @@ nav {
   font-weight: 300;
   text-align: center;
   margin: 0 auto;
+}
+
+.require {
+  padding: 68px 0 84px 0;
+}
+.require .label {
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: rgb(0, 0, 0);
+  width: 115px;
+  height: 27px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 7px;
+}
+.require .title {
+  margin-top: 32px;
+  margin-bottom: 17px;
+  color: rgb(34, 34, 34);
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.require_block {
+  margin: 33px 0;
+}
+.require_block_nmb {
+  margin-bottom: 0px;
+}
+.require_title {
+  color: rgb(30, 172, 199);
+  font-size: 22px;
+  font-weight: 400;
+}
+.require_list {
+  list-style: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+.require_list li {
+  position: relative;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.require_list li:before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  display: block;
+  width: 21px;
+  height: 20px;
+  background: url("../icon/acceptcheck_icon.png") center center/cover no-repeat;
+}
+.require_descr {
+  margin-top: 25px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(30, 172, 199);
+}
+.require .warning .require_title {
+  color: rgb(255, 86, 86);
+}
+.require .warning .require_list li:before {
+  background: url("../icon/falsecheck_icon.png") center center/cover no-repeat;
+}
+
+.world {
+  height: 720px;
+  background-color: rgb(8, 8, 22);
+  position: relative;
+  z-index: 1;
+}
+.world_img {
+  position: absolute;
+  z-index: 2;
+  right: 50%;
+  transform: translateX(50%);
+  width: 1440px;
+  height: 716px;
+}
+.world_link {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(31, 186, 214);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 68px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 223px;
+  height: 68px;
+  margin-bottom: 22px;
+}
+.world .label {
+  top: 48px;
+  z-index: 10;
+  position: relative;
+  display: block;
+  color: rgb(34, 34, 34);
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
+  width: 115px;
+  height: 27px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 7px;
+}
+.world .title {
+  top: 26px;
+  z-index: 10;
+  position: relative;
+  margin-top: 32px;
+  margin-bottom: 17px;
+  color: rgb(255, 255, 255);
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.world .subtitle {
+  z-index: 10;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.footer {
+  min-height: 134px;
+  padding: 9px 22px 9px 22px;
+  text-align: center;
+  position: relative;
+}
+.footer .stick {
+  border-bottom: 4px solid rgb(31, 186, 214);
+  width: 301px;
+  margin: 0 auto;
+}
+.footer .list_title {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  gap: 40px;
+  padding: 0;
+}
+.footer .list_title_item {
+  color: rgb(7, 7, 22);
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: left;
+  text-decoration: none;
+}
+.footer .list_subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  gap: 16px;
+  padding: 0;
+}
+.footer .list_subtitle_item {
+  color: rgb(153, 153, 153);
+  font-size: 11px;
+  font-weight: 300;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer .language {
+  color: rgb(31, 186, 214);
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 22px;
+}
+.footer .content_link {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
 }/*# sourceMappingURL=style.css.map */
